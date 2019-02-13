@@ -59,6 +59,7 @@ it("Should create a new (object) Item with name and price", function() {
 it("Should return an array containing all items in cart", function() {
     var cart = ["apple", "frog"]
     expect(cart).to.be.a("array");
+    expect(cart).to.have.members(["apple", "frog"])
     expect(cart[0]).to.equal("apple");
     expect(cart).with.lengthOf(2);
 });
