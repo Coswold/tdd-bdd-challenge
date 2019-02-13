@@ -27,9 +27,9 @@ it("should return the area of a 5 by 6 rectangle", function() {
 });
 
 it("should return the area of a circle of radius 6", function() {
-    const area = utils.circleArea(6);
+    const area = Math.round(utils.circleArea(6));
     expect(area).to.be.a("number");
-    expect(area).to.equal(113.1);
+    expect(area).to.equal(113);
 });
 
 it("should return the perimeter of a 5 by 6 rectangle", function() {
